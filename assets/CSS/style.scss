@@ -1,0 +1,49 @@
+//Mobile firt (375px)
+$color: #FFFFFF ; 
+
+@mixin header{
+    color: $color;
+    text-align: center;
+}
+
+body{
+    margin: auto 0;
+    header{
+        background-image: url(/assets/img/background.jpg);
+        background-size: cover;
+        h1, .introduction{
+            color:$color; 
+            height: 100%;
+            width: 300px;
+        }
+        h1{
+            font-size: 40px;
+            max-width: 60%;
+            border: $color solid 2px;
+            padding: 30px 50px 30px 15px;
+            margin: 30px 10px 20px 10px;
+        }
+        p{
+            font-size: 25px;
+            max-width: 50%;
+            border: $color solid 2px;
+            padding: 35px 50px 35px 15px;
+            margin: 30px 10px 20px 10px;
+            transform: translate(100px, -50px);
+        }
+    }
+    main{
+        background-color: #0f1117;
+        .allCards{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, 1fr);
+            row-gap: 50px;
+            color: $color;
+            img{
+                max-width: 50%;
+            }
+        }
+    }
+}
+

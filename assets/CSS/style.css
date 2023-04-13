@@ -1,0 +1,40 @@
+body {
+  margin: auto 0;
+}
+body header {
+  background-image: url(/assets/img/background.jpg);
+  background-size: cover;
+}
+body header h1, body header .introduction {
+  color: #FFFFFF;
+  height: 100%;
+  width: 300px;
+}
+body header h1 {
+  font-size: 40px;
+  max-width: 60%;
+  border: #FFFFFF solid 2px;
+  padding: 30px 50px 30px 15px;
+  margin: 30px 10px 20px 10px;
+}
+body header p {
+  font-size: 25px;
+  max-width: 50%;
+  border: #FFFFFF solid 2px;
+  padding: 35px 50px 35px 15px;
+  margin: 30px 10px 20px 10px;
+  transform: translate(100px, -50px);
+}
+body main {
+  background-color: #0f1117;
+}
+body main .allCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  row-gap: 50px;
+  color: #FFFFFF;
+}
+body main .allCards img {
+  max-width: 50%;
+}/*# sourceMappingURL=style.css.map */
