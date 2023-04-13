@@ -1,12 +1,24 @@
+@font-face {
+  font-family: raleway;
+  src: url(/assets/font/Raleway/Raleway-VariableFont_wght.ttf);
+}
 body {
   margin: auto 0;
+  background-color: #0f1117;
 }
 body header {
   background-image: url(/assets/img/background.jpg);
   background-size: cover;
+  background-color: #0f1117 0.5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: #FFFFFF solid 2px;
 }
 body header h1, body header .introduction {
   color: #FFFFFF;
+  text-align: center;
+  font-family: raleway;
+  font-weight: 600;
   height: 100%;
   width: 300px;
 }
@@ -15,7 +27,7 @@ body header h1 {
   max-width: 60%;
   border: #FFFFFF solid 2px;
   padding: 30px 50px 30px 15px;
-  margin: 30px 10px 20px 10px;
+  margin: 30px 20px 20px 20px;
 }
 body header p {
   font-size: 25px;
@@ -26,15 +38,46 @@ body header p {
   transform: translate(100px, -50px);
 }
 body main {
-  background-color: #0f1117;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
 }
 body main .allCards {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(10, 1fr);
-  row-gap: 50px;
-  color: #FFFFFF;
+  row-gap: 80px;
+  justify-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 80px;
 }
-body main .allCards img {
-  max-width: 50%;
+body main .allCards div {
+  background: linear-gradient(90deg, rgb(15, 17, 23) 0%, rgb(34, 38, 52) 50%, rgb(15, 17, 23) 100%);
+  border: #FFFFFF solid 2px;
+  box-shadow: 10px 10px 5px -3px rgb(0, 0, 0);
+}
+body main .allCards div img {
+  max-width: 100%;
+}
+body main .allCards div h2, body main .allCards div h3 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: raleway;
+  font-weight: 600;
+  font-weight: 400;
+}
+body main .allCards div h2 {
+  font-size: 35px;
+  margin: 20px 15px 0 15px;
+}
+body main .allCards div h3 {
+  font-size: 25px;
+}
+body main .allCards div p {
+  color: #FFFFFF;
+  text-align: justify;
+  font-family: raleway;
+  margin: 20px;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */

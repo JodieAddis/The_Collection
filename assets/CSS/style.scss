@@ -1,18 +1,36 @@
+@font-face {
+    font-family: raleway ;
+    src: url(/assets/font/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
 //Mobile firt (375px)
 $color: #FFFFFF ; 
 
 @mixin header{
     color: $color;
     text-align: center;
+    font-family: raleway;
+    font-weight: 600;
+}
+
+@mixin text {
+    color:$color;
+    text-align: justify;
+    font-family: raleway;
 }
 
 body{
     margin: auto 0;
+    background-color: #0f1117;
     header{
         background-image: url(/assets/img/background.jpg);
         background-size: cover;
+        background-color: #0f1117 0.5;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: $color solid 2px;
         h1, .introduction{
-            color:$color; 
+            @include header(); 
             height: 100%;
             width: 300px;
         }
@@ -21,7 +39,7 @@ body{
             max-width: 60%;
             border: $color solid 2px;
             padding: 30px 50px 30px 15px;
-            margin: 30px 10px 20px 10px;
+            margin: 30px 20px 20px 20px;
         }
         p{
             font-size: 25px;
@@ -33,15 +51,41 @@ body{
         }
     }
     main{
-        background-color: #0f1117;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 100px;
         .allCards{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(10, 1fr);
-            row-gap: 50px;
-            color: $color;
-            img{
-                max-width: 50%;
+            row-gap: 80px;
+            justify-items: center;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 80px;
+            div{
+                background: linear-gradient(90deg, rgba(15,17,23,1) 0%, rgba(34,38,52,1) 50%, rgba(15,17,23,1) 100%);
+                border: $color solid 2px;
+                box-shadow: 10px 10px 5px -3px rgba(0,0,0,1);
+                img{
+                    max-width: 100%;
+                }
+                h2, h3{
+                    @include header(); 
+                    font-weight: 400; 
+                }
+                h2{
+                    font-size: 35px;
+                    margin: 20px 15px 0 15px;
+                }
+                h3{
+                    font-size: 25px; 
+                }
+                p{
+                    @include text(); 
+                    margin: 20px ;
+                    font-size: 15px;
+                }
             }
         }
     }
