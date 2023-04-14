@@ -8,14 +8,14 @@ let Collection = [
         releaseyear : 1979, 
         picture : './assets/img/alien.jpg' , 
         genre : ["Aventure ", "Horreur ", "Science-Fiction "], 
-        cast : ["Sigourney Weaver ", "Tom Skerritt ", "John Hurt ", "Veronica Cartwright ", "Harry Dean Stanton ", "Ian Holm ", "Yaphet Kotto " ], 
+        cast : ["Sigourney Weaver ", "Tom Skerritt ", "John Hurt ", "Veronica Cartwright ", "Harry Dean Stanton ", "Ian Holm " ], 
         link : "https://www.youtube.com/watch?v=aeUJf5pCgOw",
         logo_link : "./assets/img/youtube.svg", 
     }, 
     avatarMovie = {
         Name : "Avatar",
         director : " James Cameron",
-        releaseyear : 2023, 
+        releaseyear : 2022, 
         picture : "./assets/img/Avatar.jpg", 
         genre : ["Action ", "Aventure ", "Science-fiction"], 
         cast : ["Sigourney Weaver ", "Sam Worthington ", "Zoe Saldana ", "Kate Winslet ", "Cliff Curtis "],
@@ -27,7 +27,7 @@ let Collection = [
         director : "John McTiernan",
         releaseyear : 1987, 
         picture : "./assets/img/predator.jpg", 
-        genre : ["Comédie"], 
+        genre : ["Science-Fiction ", "Horreur"], 
         cast : ["Arnold Schwarzenegger ", "Carl Weathers ", "Elpidia Carrillo ", "Jesse Ventura ", "Sonny Landham ", "Bill Duke" ], 
         link : "https://www.youtube.com/watch?v=9wb5V_2OEfA", 
         logo_link : "./assets/img/youtube.svg",
@@ -83,7 +83,7 @@ let Collection = [
         logo_link : "./assets/img/youtube.svg",
     }, 
     signMovie = {
-        Name : "Signs",
+        Name : "Signes",
         director : "M. Night Shyamalan",
         releaseyear : 2002, 
         picture : "./assets/img/signes.jpg", 
@@ -151,8 +151,14 @@ for (let element of Collection){
     let logo = document.createElement('img'); 
     logo.setAttribute('class', 'Link'); 
     logo.setAttribute('src', element.logo_link );
-    a.appendChild(logo); 
+    a.appendChild(logo);
+    a.setAttribute('target', '_blank'); 
     div.appendChild(a); 
+    //Insertion du lien Youtube dans une div
+    let div_int = document.createElement('div'); 
+    div_int.setAttribute('class', 'youtube');
+    div_int.appendChild(a);
+    div.appendChild(div_int); 
 }
 
 //Selection des termes des catégories de film
