@@ -16,7 +16,6 @@ body header {
 }
 body header h1, body header .introduction {
   color: #FFFFFF;
-  text-align: center;
   font-family: raleway;
   font-weight: 600;
   height: 100%;
@@ -26,14 +25,15 @@ body header h1 {
   font-size: 40px;
   max-width: 60%;
   border: #FFFFFF solid 2px;
-  padding: 30px 50px 30px 15px;
-  margin: 30px 20px 20px 20px;
+  padding: 30px 50px 30px 25px;
+  margin: 30px 20px 20px 30px;
 }
 body header p {
+  text-align: right;
   font-size: 25px;
   max-width: 50%;
   border: #FFFFFF solid 2px;
-  padding: 35px 50px 35px 15px;
+  padding: 35px 30px 35px 15px;
   margin: 30px 10px 20px 10px;
   transform: translate(100px, -50px);
 }
@@ -62,22 +62,52 @@ body main .allCards div img {
 }
 body main .allCards div h2, body main .allCards div h3 {
   color: #FFFFFF;
-  text-align: center;
   font-family: raleway;
   font-weight: 600;
   font-weight: 400;
+  text-align: center;
+  margin: 20px 15px 0 15px;
 }
 body main .allCards div h2 {
   font-size: 35px;
-  margin: 20px 15px 0 15px;
 }
 body main .allCards div h3 {
   font-size: 25px;
 }
 body main .allCards div p {
   color: #FFFFFF;
-  text-align: justify;
   font-family: raleway;
-  margin: 20px;
-  font-size: 15px;
+  margin: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+body main .allCards div .date {
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #0f1117;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+  margin-left: 40%;
+  margin-right: 40%;
+  border: #a846ff solid 2px;
+}
+body main .allCards div .genre {
+  word-spacing: 10px;
+  text-align: center;
+}
+body main .allCards div .cast {
+  text-align: center;
+  word-spacing: 10px;
+}
+body main .allCards div .Link {
+  width: 20%;
+  filter: invert(1);
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 40%;
+}
+body main .allCards div .Link:hover {
+  cursor: pointer;
+  filter: invert(38%) sepia(58%) saturate(6735%) hue-rotate(255deg) brightness(109%) contrast(101%);
 }/*# sourceMappingURL=style.css.map */
