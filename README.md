@@ -1,10 +1,10 @@
 # The Collection
 
- <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"/> 
-<img src="https://img.shields.io/badge/CSS-blue?&logo=visual%20studio%20code&style=for-the-badge"> 
-<img src="https://img.shields.io/badge/Sass-2A403D?&logo=sass&style=for-the-badge">
-<img src="https://img.shields.io/badge/JavaScript-yellow?&logo=javascript&logoColor=black&style=for-the-badge">
-<img src="https://img.shields.io/badge/MobileFirst-006666?&style=for-the-badge"> 
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"/>
+ <img src="https://img.shields.io/badge/CSS-blue?&logo=visual%20studio%20code&style=for-the-badge">
+ <img src="https://img.shields.io/badge/Sass-2A403D?&logo=sass&style=for-the-badge">
+ <img src="https://img.shields.io/badge/JavaScript-yellow?&logo=javascript&logoColor=black&style=for-the-badge">
+ <img src="https://img.shields.io/badge/MobileFirst-006666?&style=for-the-badge"> 
 
 ---------------------------
 
@@ -14,16 +14,17 @@ This project was release for mobile (375px) and computer (1140px) format.
 
 -------------------------
 
-## Mobile version 
-
-![Test](/assets/img/readMe/mobile.gif)
-
--------------------------
-
 ## Computer version 
 
 
 ![Test](/assets/img/readMe/computer.gif)
+
+
+-------------------------
+
+## Mobile version 
+
+![Test](/assets/img/readMe/mobile.gif)
 
 
 
