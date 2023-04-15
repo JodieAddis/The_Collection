@@ -1,13 +1,13 @@
 @font-face {
   font-family: raleway;
-  src: url(/assets/font/Raleway-VariableFont_wght.ttf);
+  src: url(../font/Raleway-VariableFont_wght.ttf);
 }
 body {
   margin: auto 0;
   background-color: #0f1117;
 }
 body header {
-  background-image: url(/assets/img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-color: #0f1117 0.5;
   padding-top: 50px;
@@ -118,7 +118,7 @@ body main .allCards div div .Link:hover {
 
 @media screen and (min-width: 1440px) {
   body header {
-    background-image: url(/assets/img/background_desktop.jpg);
+    background-image: url(../img/background_desktop.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;

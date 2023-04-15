@@ -1,6 +1,6 @@
 @font-face {
     font-family: raleway ;
-    src: url(/assets/font/Raleway-VariableFont_wght.ttf);
+    src: url(../font/Raleway-VariableFont_wght.ttf);
 }
 
 //Mobile firt (375px)
@@ -21,7 +21,7 @@ body{
     margin: auto 0;
     background-color: #0f1117;
     header{
-        background-image: url(/assets/img/background.jpg);
+        background-image: url(../img/background.jpg);
         background-size: cover;
         background-color: #0f1117 0.5;
         padding-top: 50px;
@@ -131,7 +131,7 @@ body{
     body{
         //background-color: #0040ff;
         header{
-            background-image: url(/assets/img/background_desktop.jpg);
+            background-image: url(../img/background_desktop.jpg);
             background-size: cover;
             display: flex;
             justify-content: center;
